@@ -87,8 +87,34 @@ public class LinkedListDeque<genericType>{
 
 		if(size<=0){
 			size=0;
+		}	
+	}
+
+	//getRecursive(int index): use recursive
+	
+	//get(int i): use interation
+	public genericType get(int i){
+		intNode intermediateNode=sentinel;
+		for(int k=1;k<=i;k++){
+			intermediateNode=intermediateNode.next;
 		}
-		
+		return intermediateNode.item;
+	}
+
+	//getRecursive(int index): use recursive
+	private  genericType getRecursiveHelper(intNode tempNode, int index){
+		if(index==0){
+			return tempNode.item;
+		}
+
+		return getRecursiveHelper(tempNode.next, --index);
+
+	}
+	
+	//getRecursive(int index): use recursive
+	public genericType getRecursive(int index){
+		return getRecursiveHelper(sentinel,index);
+
 	}
 
 

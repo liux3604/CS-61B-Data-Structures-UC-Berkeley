@@ -93,13 +93,8 @@ public class LinkedListDequeTest {
 		lld1.addLast("world ");
 		lld1.addLast("liusong");
 		lld1.printDeque();
-		lld1.removeLast();
-		lld1.printDeque();
-		lld1.removeLast();
-		lld1.removeLast();
-		System.out.println(lld1.size());
-		lld1.removeLast();
-		System.out.println(lld1.size());
+
+		System.out.println(lld1.getRecursive(0));
 
 
 	}
