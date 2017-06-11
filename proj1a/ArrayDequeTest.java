@@ -2,7 +2,10 @@
  * Created by Song on 5/22/2017.
  */
 public class ArrayDequeTest {
-
+    /**
+     * Many functions in this class has not been fully tested for overflow and underflow
+     * I plan to thoroughly test it in Lab 3
+     * */
 
     public static void main(String[] args){
         ArrayDeque<String> newList= new ArrayDeque<String>();

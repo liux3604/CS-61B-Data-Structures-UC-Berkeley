@@ -2,6 +2,12 @@
  * Created by Song on 5/22/2017.
  */
 
+/**
+ * Many functions in this class has not been fully tested for overflow and underflow
+ * I plan to thoroughly test it in Lab 3
+ * */
+
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 

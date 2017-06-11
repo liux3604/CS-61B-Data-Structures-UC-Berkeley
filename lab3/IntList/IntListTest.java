@@ -20,12 +20,48 @@ public class IntListTest {
         assertEquals(threeTwoOne, x);
     }
 
-    @Test
+    /**
+     *
+     *
+     *
+     *
+     *
+     *     @Test
     public void testdSquareList() {
-        IntList L = IntList.list(1, 2, 3);
-        IntList.dSquareList(L);
-        assertEquals(IntList.list(1, 4, 9), L);
+    IntList L = IntList.list(1, 2, 3);
+    IntList.dSquareList(L);
+    assertEquals(IntList.list(1, 4, 9), L);
     }
+
+
+     @Test
+     public void testSquareListRecursive() {
+     IntList L = IntList.list(1, 2, 3);
+     IntList res = IntList.squareListRecursive(L);
+     assertEquals(IntList.list(1, 2, 3), L);
+     assertEquals(IntList.list(1, 4, 9), res);
+     }
+
+     @Test
+     public void testDcatenate() {
+     IntList A = IntList.list(1, 2, 3);
+     IntList B = IntList.list(4, 5, 6);
+     IntList exp = IntList.list(1, 2, 3, 4, 5, 6);
+     assertEquals(exp, IntList.dcatenate(A, B));
+     assertEquals(IntList.list(1, 2, 3, 4, 5, 6), A);
+     }
+
+     @Test
+     public void testCatenate() {
+     IntList A = IntList.list(1,2,3);
+     IntList B = IntList.list(4, 5, 6);
+     IntList exp = IntList.list(1, 2, 3, 4, 5, 6);
+     assertEquals(exp, IntList.catenate(A, B));
+     assertEquals(IntList.list(1, 2, 3), A);
+     }
+
+
+     * */
 
     /**
      * Do not use the new keyword in your tests. You can create
@@ -40,34 +76,24 @@ public class IntListTest {
      * Anything can happen to A.
      */
 
-    @Test
-    public void testSquareListRecursive() {
-        IntList L = IntList.list(1, 2, 3);
-        IntList res = IntList.squareListRecursive(L);
-        assertEquals(IntList.list(1, 2, 3), L);
-        assertEquals(IntList.list(1, 4, 9), res);
-    }
-
-    @Test
-    public void testDcatenate() {
-        IntList A = IntList.list(1, 2, 3);
-        IntList B = IntList.list(4, 5, 6);
-        IntList exp = IntList.list(1, 2, 3, 4, 5, 6);
-        assertEquals(exp, IntList.dcatenate(A, B));
-        assertEquals(IntList.list(1, 2, 3, 4, 5, 6), A);
-    }
-
-    @Test
-    public void testCatenate() {
-        IntList A = IntList.list(1,2,3);
-        IntList B = IntList.list(4, 5, 6);
-        IntList exp = IntList.list(1, 2, 3, 4, 5, 6);
-        assertEquals(exp, IntList.catenate(A, B));
-        assertEquals(IntList.list(1, 2, 3), A);
-    }
 
     /** If you're running this from the command line, you'll need
       * to add a main method. See ArithmeticTest.java for an
       * example. */
+
+
+    @Test
+    public void testReverse(){
+        IntList newList= new IntList();
+        IntList newList2= new IntListTest(1, newList)
+        IntList newList3= new IntList(2, newList2);
+        IntList newList4= new IntList(3, newList3);
+
+        IntList reversedList = newList4.reverse();
+
+
+    }
+
+
 
 }

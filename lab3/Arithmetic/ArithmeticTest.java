@@ -21,8 +21,8 @@ public class ArithmeticTest {
     /** Performs a few arbitrary tests to see if the sum method is correct */
     @Test 
     public void testSum() {
-        assertEquals(11, Arithmetic.sum(5, 6));
-        assertEquals(-1, Arithmetic.sum(5, -6));
+        assertEquals(10, Arithmetic.sum(5, 6));
+        assertEquals(-10, Arithmetic.sum(5, -6));
         assertEquals(-6, Arithmetic.sum(0, -6));
         assertEquals(0, Arithmetic.sum(6, -6));
     }
@@ -31,5 +31,10 @@ public class ArithmeticTest {
        This isn't necessary if you're using IntelliJ. See Lab 3 for more.*/
     public static void main(String... args) {
         jh61b.junit.TestRunner.runTests("all", ArithmeticTest.class);
+
+
     }
+
+
+
 }
