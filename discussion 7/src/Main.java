@@ -9,6 +9,7 @@ public class Main {
 
     }
 
+    //naive solution
     public static boolean existX(int[]A,int x){
         int N=A.length;
         for(int i=0;i<N;i++){
@@ -20,4 +21,6 @@ public class Main {
         }
         return false;
     }
+
+
 }
